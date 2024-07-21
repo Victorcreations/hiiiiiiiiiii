@@ -103,34 +103,10 @@
           </div>
           <div class="exam-selection">
             <div class="exam-input">
-
-              <!-- other work-->
-             <!--<div class="exam-input-child"></div>
-              <div class="exam-value">
-                <div class="exam-boundary" id="examBoundary"></div>
-                <input
-                  class="select-year"
-                  placeholder="Select Year>"
-                  type="text"
-                />
-
-                <div class="exam-display">
-                  <div class="current-exam">&gt;</div>
-                </div>
+              <div class="toggle-bar">
+                <p class="lessPlan" onclick="toggleColour('lessPlan')">Lesson Plan</p>
+                <p class="Sched" onclick="toggleColour('Sched')">Schedule</p>
               </div>
-              <div class="semester-input">
-                <div class="semester-value">
-                  <div class="semester-value-child"></div>
-                  <div class="select-semester">Select Semester</div>
-                  <h2 class="current-semester">&gt;</h2>
-                </div>
-              </div>
-              <div class="exam-input1">
-                <div class="exam-input-item"></div>
-                <div class="select-exam">Select Exam</div>
-                <h2 class="current-exam1">&gt;</h2>
-              </div>
-            -->
 
             </div>
           </div>
@@ -140,10 +116,28 @@
 
     <script>
       var examBoundary = document.getElementById("examBoundary");
+      var lessonPlan = document.querySelector(".lessPlan");
+      var Schedule = document.querySelector(".Sched");
+
       if (examBoundary) {
         examBoundary.addEventListener("click", function (e) {
           window.location.href = "./std-acamedic-ar1.html";
         });
+      }
+
+      function toggleColour(Colour)
+      {
+        if(Colour === 'lessPlan')
+        {
+          lessonPlan.style.backgroundColor = "#1b9bff";
+          Schedule.style.backgroundColor = "#006c84";
+        }
+
+        else
+        {
+          lessonPlan.style.backgroundColor = "#006c84";
+          Schedule.style.backgroundColor = "#1b9bff";
+        }
       }
     </script>
   </body>

@@ -634,3 +634,31 @@ a:hover{
   padding: 10px;
   
 }
+
+
+.toggle-bar{
+  width: 350px;
+  height: 65px;
+  border-radius: 30px;
+  background-color: #006c84;
+  position: relative;
+  left: 77%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.lessPlan,.Sched{
+  border-radius: 20px;
+  width: 140px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.lessPlan{
+  background-color: #1b9bff;
+}
